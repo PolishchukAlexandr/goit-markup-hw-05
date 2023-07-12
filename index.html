@@ -441,6 +441,25 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form class="form-footer" name="subscribe">
+            <label class="foot-form-label" for="email"
+              >Subscribe
+              <input
+                class="foot-form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="foot-form-btn">
+              Subscribe
+              <svg class="foot-frame-icon" width="24" height="24">
+                <use href="./images/icons.svg#frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Модальне вікно-->
@@ -451,6 +470,40 @@
             <use href="./images/icons.svg#x-icon"></use>
           </svg>
         </button>
+        <form class="form-modal" action="">
+          <strong class="modal-title"
+            >Leave your contacts and we will call you back</strong
+          >
+          <label class="modal-form-label-text"
+            ><span class="span-text"> Name </span>
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+            <input class="modal-form-input-text" type="text" name="name" />
+          </label>
+          <label class="modal-form-label-phone" name="phone">
+            <span class="span-text"> Phone </span>
+            <input class="modal-form-input-phone" type="tel" name="phone" />
+          </label>
+          <label class="modal-form-label-email" name="email2">
+            <span class="span-text"> Email </span>
+            <input class="modal-form-input-email" type="email" name="email2" />
+          </label>
+          <label class="modal-form-label-textarea" name="comments">
+            <span class="span-text"> Comments </span>
+            <textarea
+              class="modal-textarea"
+              name="comments"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <div class="btn-modal-container">
+            <button type="submit" class="modal-submit-btn">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
