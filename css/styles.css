@@ -373,7 +373,7 @@ img {
 .discription-paragraph {
   font-size: 16px;
   color: var(--primary-cloud-color);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -616,8 +616,11 @@ img {
 
 /*Footer Form*/
 .foot-form-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 24px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -629,10 +632,16 @@ img {
   color: var(--primary-white-color);
   border: none;
   border-radius: 4px;
+  margin: 8px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foot-form-btn:hover,
+.foot-form-btn:focus {
+  background-color: var(--primary-ocean-color);
 }
 .foot-frame-icon {
-  top: 8px;
-  right: 24px;
+  margin-left: 16px;
+  fill: var(--primary-white-color);
 }
 .modal-textarea {
   resize: none;
@@ -642,12 +651,19 @@ img {
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   outline: transparent;
+  font-size: 18px;
 }
 .modal-textarea:focus {
   border-color: var(--primary-blue-color);
 }
 .modal-p {
   display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: 0.48px;
+  color: var(--primary-light-slate-color);
+  display: flex;
 }
 .modal-submit-btn {
   display: flex;
@@ -655,11 +671,28 @@ img {
   align-items: center;
   width: 169px;
   height: 56px;
+  background-color: var(--primary-blue-color);
+  border: none;
+  color: var(--primary-white-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: var(--primary-ocean-color);
 }
 .btn-modal-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 24px;
 }
 .modal-form-label-field {
   display: block;
@@ -725,11 +758,14 @@ img {
 .span-text {
   display: block;
   margin-bottom: 4px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.48px;
   color: var(--primary-light-slate-color);
+}
+.privace-link {
+  color: var(--primary-blue-color);
 }
