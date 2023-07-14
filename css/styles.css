@@ -632,7 +632,6 @@ img {
   color: var(--primary-white-color);
   border: none;
   border-radius: 4px;
-  margin: 8px 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foot-form-btn:hover,
@@ -768,4 +767,23 @@ img {
 }
 .privace-link {
   color: var(--primary-blue-color);
+}
+.form-footer {
+  display: flex;
+  margin-left: 80px;
+}
+.foot-form-input {
+  color: var(--primary-white-color);
+  background-color: var(--primary-navyblue-color);
+  border-radius: 4px;
+  border: 1px solid var(--primary-white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 264px;
+  height: 40px;
+  margin-top: 16px;
+  padding: 8px 16px;
+}
+.foot-form-label {
+  color: var(--primary-white-color);
+  background-color: var(--primary-navyblue-color);
 }
