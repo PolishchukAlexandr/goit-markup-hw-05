@@ -738,6 +738,9 @@ img {
 .form-modal-container {
   margin-bottom: 8px;
 }
+.form-modal-container-comment {
+  margin-bottom: 16px;
+}
 .modal-form-input:focus {
   border-color: var(--primary-blue-color);
 }
