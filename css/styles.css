@@ -727,6 +727,7 @@ img {
   margin: 24px;
 }
 .modal-form-label-field {
+  margin-bottom: 4px;
   display: block;
   position: relative;
   font-size: 12px;
@@ -735,7 +736,7 @@ img {
   color: var(--primary-light-slate-color);
 }
 .form-modal-container {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .modal-form-input:focus {
   border-color: var(--primary-blue-color);
@@ -781,6 +782,7 @@ img {
 .form-modal {
 }
 .modal-title {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
