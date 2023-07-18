@@ -670,7 +670,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--primary-light-slate-color);
-  display: flex;
+
   align-items: center;
   gap: 8px;
 }
