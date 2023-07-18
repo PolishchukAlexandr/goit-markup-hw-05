@@ -690,7 +690,7 @@ img {
 .modal-submit-btn {
   cursor: pointer;
   display: block;
-  margin: 24px 120px;
+  margin: auto;
   min-width: 169px;
   height: 56px;
   background-color: var(--primary-blue-color);
@@ -698,7 +698,6 @@ img {
   color: var(--primary-white-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -819,7 +818,6 @@ img {
   border: none;
   background-color: var(--primary-ocean-color);
   fill: var(--primary-cloud-color);
-  stroke: var(--primary-cloud-color);
 }
 .foot-form-input {
 }
