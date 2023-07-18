@@ -671,8 +671,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--primary-light-slate-color);
-  display: flex;
-  gap: 8px;
 }
 .modal-form-custom-checkbox {
   width: 16px;
