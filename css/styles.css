@@ -815,10 +815,11 @@ img {
 
 .modal-input-checkbox:checked
   + .modal-label-checkbox
-  > .modal-form-custom-checkbox {
+  .modal-form-custom-checkbox {
   border: none;
   background-color: var(--primary-ocean-color);
   fill: var(--primary-cloud-color);
+  stroke: var(--primary-cloud-color);
 }
 .foot-form-input {
 }
