@@ -95,8 +95,8 @@ button {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 24px;
   color: #fff;
 }
 
@@ -474,12 +474,26 @@ section {
     display: block;
   }
 }
+@media only screen and (max-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .li-people {
-  width: calc((100% - 72px) / 4);
+  margin-top: 72px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+@media only screen and (min-width: 1156px) {
+  .li-people {
+    width: calc((100% - 72px) / 4);
+    margin: 0;
+  }
 }
 .personal-name {
   padding: 32px 0;
