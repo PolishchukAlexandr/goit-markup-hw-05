@@ -724,7 +724,6 @@ section {
 /*Foter*/
 .foot-container {
   display: flex;
-  align-items: baseline;
 }
 .div-logo {
   margin-right: 120px;
