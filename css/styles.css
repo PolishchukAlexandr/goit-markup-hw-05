@@ -82,7 +82,7 @@ button {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--primary-blue-color);
   z-index: 999;
 
   transform: translateX(100%);
@@ -104,6 +104,13 @@ button {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.mobile-menu-link {
+  font-size: 36px;
+  color: var(--primary-navyblue-color);
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
 }
 
 .mobile-menu .link {
@@ -357,7 +364,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-navyblue-color);
-  margin-bottom: 72px;
 }
 .team-section {
   background-color: var(--primary-cloud-color);
@@ -442,7 +448,7 @@ section {
     gap: 24px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .li-about {
     flex-basis: calc((100% - 24px) / 2);
   }
@@ -452,11 +458,6 @@ section {
   .list-about {
     display: flex;
     gap: 24px;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .li-about {
-    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -474,12 +475,21 @@ section {
     display: block;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .our-team-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .li-people {
+    flex-basis: calc((100% - 64px * 24px) / 2);
+  }
+  .our-team-list {
+    display: flex;
+    justify-content: center;
   }
 }
 .li-people {
@@ -645,14 +655,38 @@ section {
   width: 40px;
   height: 40px;
 }
+/*Mobile*/
 .clients-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .clients-item {
-  width: calc((100% - 120px) / 6);
+  flex-basis: calc((100% - 72px) / 2);
+  margin-top: 72px;
+  width: 190px;
   height: 88px;
+}
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+  .clients-list {
+    gap: 24px;
+  }
+  .clients-item {
+    width: 168px;
+    flex-basis: calc((100% - 72px) / 3);
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 1158px) {
+  .clients-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .clients-item {
+    width: calc((100% - 120px) / 6);
+  }
 }
 .clients-link {
   display: flex;
