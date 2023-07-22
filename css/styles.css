@@ -724,9 +724,21 @@ section {
 /*Foter*/
 .foot-container {
   display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1156px) {
+  .foot-container {
+    flex-direction: row;
+  }
 }
 .div-logo {
-  margin-right: 120px;
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 1156px) {
+  .div-logo {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
 }
 .foot-background {
   background-color: var(--primary-navyblue-color);
@@ -896,7 +908,7 @@ section {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   background-color: var(--primary-blue-color);
   color: var(--primary-white-color);
@@ -1057,14 +1069,20 @@ section {
 .form-footer {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1156px) {
+  .form-footer {
+    flex-direction: row;
+  }
 }
 .foot-form-input {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--primary-white-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 264px;
   height: 40px;
+  width: 400px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -1075,6 +1093,11 @@ section {
 }
 .foot-form-input::placeholder {
   color: var(--primary-white-color);
+}
+@media only screen and (min-width: 1156px) {
+  .foot-form-input {
+    width: 264px;
+  }
 }
 
 .foot-form-label {
@@ -1096,7 +1119,18 @@ section {
   .modal-form-custom-checkbox {
   border-color: var(--primary-ocean-color);
 }
-
+.foot-social-media-container {
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 1156px) {
+  .foot-social-media-container {
+    margin-bottom: 0;
+    align-items: baseline;
+  }
+}
 .foot-form-paragraph {
   font-size: 16px;
   font-weight: 500;
@@ -1108,5 +1142,11 @@ section {
 .form-foot-container {
   display: flex;
   flex-direction: column;
-  margin-left: 80px;
+  align-items: center;
+}
+@media only screen and (min-width: 1156px) {
+  .form-foot-container {
+    align-items: baseline;
+    margin-left: 80px;
+  }
 }
