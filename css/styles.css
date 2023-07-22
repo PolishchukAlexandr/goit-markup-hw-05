@@ -311,7 +311,7 @@ img {
     letter-spacing: 1.12px;
   }
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 1158px) {
   .solutions-logo {
     margin-bottom: 48px;
   }
@@ -506,7 +506,7 @@ section {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 1158px) {
   .li-people {
     width: calc((100% - 72px) / 4);
     margin: 0;
@@ -726,7 +726,11 @@ section {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .foot-container {
+  }
+}
+@media only screen and (min-width: 1158px) {
   .foot-container {
     flex-direction: row;
   }
@@ -734,7 +738,7 @@ section {
 .div-logo {
   margin-bottom: 72px;
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 1158px) {
   .div-logo {
     margin-right: 120px;
     margin-bottom: 0;
@@ -1071,7 +1075,12 @@ section {
   gap: 24px;
   flex-direction: column;
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .form-footer {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1158px) {
   .form-footer {
     flex-direction: row;
   }
@@ -1094,7 +1103,12 @@ section {
 .foot-form-input::placeholder {
   color: var(--primary-white-color);
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .foot-form-input {
+    width: 264px;
+  }
+}
+@media only screen and (min-width: 1158px) {
   .foot-form-input {
     width: 264px;
   }
@@ -1125,7 +1139,8 @@ section {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1156px) {
+
+@media only screen and (min-width: 1158px) {
   .foot-social-media-container {
     margin-bottom: 0;
     align-items: baseline;
@@ -1138,13 +1153,14 @@ section {
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
   margin-bottom: 16px;
+  padding-left: 0;
 }
 .form-foot-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1156px) {
+@media only screen and (min-width: 1158px) {
   .form-foot-container {
     align-items: baseline;
     margin-left: 80px;
