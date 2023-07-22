@@ -101,6 +101,12 @@ button {
 }
 .mobile-menu-icon {
 }
+.mobile-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
 .mobile-menu {
   padding: 0;
   margin: 0;
