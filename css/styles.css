@@ -78,7 +78,10 @@ button {
 .menu-container {
   display: flex;
   flex-direction: column;
-
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -94,6 +97,9 @@ button {
 
 .menu-container .is-open {
   transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .menu-container .menu-toggle {
@@ -523,12 +529,14 @@ img {
 }
 /*Mobile*/
 section {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 /*Desktop*/
 @media screen and (min-width: 1158px) {
   section {
-    padding: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
