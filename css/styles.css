@@ -463,7 +463,9 @@ img {
   text-transform: capitalize;
   color: var(--primary-navyblue-color);
 }
-
+.what-we-doin-title {
+  margin-bottom: 72px;
+}
 .team-section {
   background-color: var(--primary-cloud-color);
 }
@@ -573,6 +575,7 @@ section {
 @media only screen and (min-width: 1158px) {
   .main-doing {
     display: block;
+    padding-top: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -824,14 +827,14 @@ section {
   .foot-container {
     flex-direction: row;
     text-align: left;
+    display: flex;
+  }
+  .div-logo {
+    margin-bottom: 0;
+    margin-right: 120px;
   }
 }
 
-@media only screen and (min-width: 1158px) {
-  .div-logo {
-    margin-bottom: 0;
-  }
-}
 .foot-background {
   background-color: var(--primary-navyblue-color);
   padding: 100px 0;
@@ -859,9 +862,19 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (min-width: 1158px) {
+  .foot-paragraph {
+    margin: unset;
+  }
+}
 .foot-social {
   font-size: 500;
   margin-bottom: 16px;
+}
+@media only screen and (min-width: 1158px) {
+  .foot-social {
+    width: unset;
+  }
 }
 .foot-list-container {
   display: flex;
@@ -1189,6 +1202,7 @@ section {
 @media only screen and (min-width: 1158px) {
   .form-footer {
     flex-direction: row;
+    width: unset;
   }
 }
 .foot-form-input {
@@ -1224,6 +1238,11 @@ section {
   color: var(--primary-white-color);
   width: 100%;
 }
+@media only screen and (min-width: 1158px) {
+  .foot-form-label {
+    width: unset;
+  }
+}
 .modal-form-check-icon {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1254,6 +1273,7 @@ section {
 }
 @media only screen and (min-width: 1158px) {
   .foot-social-media-container {
+    margin-right: 80px;
   }
 }
 .foot-form-paragraph {
