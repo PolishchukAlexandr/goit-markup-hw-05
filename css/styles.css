@@ -94,7 +94,11 @@ button {
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .menu-container {
+    padding-bottom: 50px;
+  }
+}
 .menu-container.is-open {
   transform: translateX(0);
   opacity: 1;
